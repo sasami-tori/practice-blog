@@ -1,0 +1,222 @@
+*{
+  margin: 0;
+  padding: 0;
+  font-family: 'Yu Gothic UI', 'ヒラギノ角ゴシック', 'Hiragino Sans', 'Calibri', 'Andale Mono', 'Avenir', sans-serif;
+}
+body {
+  background-color: #E8E5DD;
+}
+nav {
+  background-color:#839b5c;
+  top: 0;
+  right: 0;
+}
+nav p {
+	color:#fff;
+  float: left;
+  padding: 20px;
+  font-size: 20px;
+}
+nav ul {
+  list-style: none;
+  float: right;
+}
+nav ul li {
+  float: left;
+  padding: 20px;
+}
+nav a {
+  color: #FFFFFF;;
+  text-decoration: none;
+}
+nav a:hover {
+  color: #D6C6AF;
+  text-decoration: none;
+}
+/*ヘッダー*/
+.header {
+  height: 200px;
+  width: 100%;
+  background-color: #d6c6af;
+  text-align: center;
+}
+.header p img {
+  max-width: 500px;
+  margin-left: 10px;
+}
+.header img {
+  max-width: 500px;
+  margin-left: 30px;
+}
+/*日記*/
+.diary {
+	margin-top:1em;
+	margin-bottom: 1em;
+  padding:2em 4em ;
+  background-color: #fff;
+	border-radius: 10px;
+	box-shadow: 0 0 8px silver;
+}
+.kiji {
+  margin-bottom: 50px;
+}
+.kiji h2 span {
+  font-size: 70%;
+}
+.kiji p {
+  padding: 20px 10px 0 10px;
+  letter-spacing: 0.05em;
+  line-height: 1.5em
+}
+.date {
+  float: right;
+  text-align: right;
+}
+#wrapper {
+	margin-top:1em;
+  margin-left: 1em;
+	padding:1em;
+	border-radius: 10px;
+}
+#wrapper ul li {
+  padding: 5px;
+}
+/*プロフィール*/
+.profile{
+	 background-color: #fff;
+	padding:1em 1.5em;
+	border-radius: 10px;
+	box-shadow: 0 0 8px silver;
+}
+.profile ul {
+  margin-left: 30px;
+}
+.log {
+  margin-top: 50px;
+	 background-color: #fff;
+	padding:1em 1.5em;
+	border-radius: 10px;
+	box-shadow: 0 0 8px silver;
+}
+.log p{
+	margin-left: 0.5em;
+ position: relative;
+}
+.log p::before{
+	display: block;
+  content: '';
+  position: absolute;
+  top: .65em;
+  left: -1em;
+  width: 8px;
+  height: 1px;
+  background-color: #666;
+}
+.log ul {
+  margin-left: 50px;
+	list-style: none;
+	position: relative;
+}
+.log ul li{
+	position: relative;
+}
+.log ul li::before{
+	display: block;
+  content: '';
+  position: absolute;
+  top: .9em;
+  left: -1em;
+  width: 6px;
+  height: 6px;
+  border-right: 1px solid #666;
+  border-bottom: 1px solid #666;
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+.log ul li:hover{
+	background-color: #F5F4F0;
+	animation-name: slide;
+	animation-duration: 0.5s;
+	animation-timing-function:ease;
+	animation-delay: 0s;
+	animation-iteration-count: 1;
+	animation-direction: normal;
+}
+@keyframes slide{
+	0%{width: 0%;}
+	
+	100%{width: 100%;}
+}
+.log ul li a {
+  text-decoration: none;
+  color: #000;
+}
+footer {
+  background-color: #839B5C;
+}
+footer p {
+  color: #FFFFFF;
+  text-align: center;
+	margin-bottom:0;
+  height: 60px;
+  padding-top: 10px;
+}
+nav ul li a {
+  text-decoration: none;
+}
+.clear {
+  clear: both;
+}
+/*  ページトップ  */
+#page-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  font-size: 80%;
+}
+#page-top a {
+  display: block;
+  z-index: 999;
+  padding: 8px 0 0 8px;
+  
+}
+#page-top img{
+	filter: drop-shadow(0.5em 0.5em 0.5em rgba(0,0,0,0.3)); 
+	
+}
+
+#page-top img:hover {
+ filter: none;
+	transform: translate(0,2px);
+}
+/*    photo   */
+.gallery {
+  padding-top: 30px;
+}
+.gallery ul {
+  list-style: none;
+}
+.gallery li {
+  float: left;
+  padding: 30px;
+}
+.gallery img {
+  height: 150px;
+  width: auto;
+}
+#bg {
+  position: fixed;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, .4);
+}
+#photo {
+  position: absolute;
+  top: 30%;
+  left: 30%;
+  margin: auto;
+  width: 600px;
+  height: auto;
+}
